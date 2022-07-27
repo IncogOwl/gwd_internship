@@ -1,0 +1,10 @@
+<form method="POST" action="{%url 'contact_form'%}" enctype="multipart/form-data">
+  {% csrf_token %}
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+  <label for="location">Location:</label><br>
+  <input type="text" id="location" name="location" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
